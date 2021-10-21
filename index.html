@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Nayra Yagami - DoWhile 2021</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="avatar">
+          <span>
+            <img src="images/build.png" alt="Selo Rocketseat" />
+          </span>
+          <img src="images/fotoDePerfil.jpeg" alt="Foto pessoal" />
+        </div>
+        <h1>Nayra Yagami</h1>
+        <a href="https:/github.com/NayraYagami" target="_blank">
+          <img src="images/github.svg" alt="ícone github" />
+          NayraYagami</a
+        >
+        <p>An instructor focused on helping pople start programming for web</p>
+
+        <ul id="socialLinks">
+          <li class="youtube">
+            <a href="https:/youtube.com/watch?v" target="_blank">
+              <img src="images/youtube.svg" alt="ícone youtube" />
+            </a>
+          </li>
+
+          <li class="instagram">
+            <a href="https:/instagram.com/nayrayagami" target="_blank">
+              <img src="images/instagram.svg" alt="ícone instagram" />
+            </a>
+          </li>
+
+          <li class="facebook">
+            <a
+              href="https:/facebook.com/profile.php?id=100019561932349"
+              target="_blank"
+            >
+              <img src="images/facebook.svg" alt="ícone facebook" />
+            </a>
+          </li>
+
+          <li class="twitter">
+            <a href="https:/twitter.com/nayrayagami" target="_blank">
+              <img src="images/twitter.svg" alt="ícone twitter" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      const LinksSocialMedia = {
+        github: 'NayraYagami',
+        youtube: 'channel/UCdsuKUzzeBZVRqhD_tjW0iw',
+        facebook: '100019561932349',
+        instagram: 'nayrayagami',
+        twitter: 'NayraYagami'
+      }
+      function changeSocialMediaLinks() {
+        for (let li of socialLinks.children) {
+          const social = li.getAttribute('class')
+
+          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
+
+          //alert(li.children[0].href)
+        }
+      }
+      changeSocialMediaLinks()
+    </script>
+  </body>
+</html>
+<!--#RumoAoPróximoNível--->
+<!--#Protagonistas-->
+<!--#ImaginarConstruirTransformar-->
