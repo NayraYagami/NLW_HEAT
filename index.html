@@ -18,19 +18,25 @@
           <span>
             <img src="images/build.png" alt="Selo Rocketseat" />
           </span>
-          <img src="images/fotoDePerfil.jpeg" alt="Foto pessoal" />
+          <img src="images/twitter.svg" alt="Foto pessoal" id="userImage" />
         </div>
-        <h1>Nayra Yagami</h1>
-        <a href="https:/github.com/NayraYagami" target="_blank">
+
+        <h1 id="userName">Nayra Yagami</h1>
+        <a id="userLink" href="https:/github.com/maykbrito" target="_blank">
           <img src="images/github.svg" alt="ícone github" />
-          NayraYagami</a
+          <span id="userLogin">Nayra</span></a
         >
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
 
         <ul id="socialLinks">
-          <li class="youtube">
-            <a href="https:/youtube.com/watch?v" target="_blank">
-              <img src="images/youtube.svg" alt="ícone youtube" />
+          <li class="linkedin">
+            <a
+              href="https://www.linkedin.com/in/nayra-silva-549686202/"
+              target="_blank"
+            >
+              <img src="images/linkedin.svg" alt="ícone linkedin" />
             </a>
           </li>
 
@@ -57,28 +63,10 @@
         </ul>
       </div>
     </main>
-
-    <script>
-      const LinksSocialMedia = {
-        github: 'NayraYagami',
-        youtube: 'channel/UCdsuKUzzeBZVRqhD_tjW0iw',
-        facebook: '100019561932349',
-        instagram: 'nayrayagami',
-        twitter: 'NayraYagami'
-      }
-      function changeSocialMediaLinks() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-
-          li.children[0].href = `https://${social}.com/${LinksSocialMedia[social]}`
-
-          //alert(li.children[0].href)
-        }
-      }
-      changeSocialMediaLinks()
-    </script>
+    <script src="main.js"></script>
   </body>
 </html>
 <!--#RumoAoPróximoNível--->
 <!--#Protagonistas-->
 <!--#ImaginarConstruirTransformar-->
+<!---#SemLimites-->
