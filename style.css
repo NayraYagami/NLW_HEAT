@@ -11,6 +11,8 @@ body {
   height: 100%;
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
+
+  background-color: rgb(38, 38, 39);
 }
 
 body {
@@ -19,9 +21,10 @@ body {
 }
 
 main {
-  background: url(images/Mobile.png.png);
-  width: 375px;
-  height: 812px;
+  background: url(images/Mobile.svg) no-repeat center/cover;
+  width: 100vw;
+  min-height: 812px;
+  height: 100vh;
 }
 
 .container {
@@ -79,4 +82,42 @@ ul {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
+}
+
+li img {
+  width: 100%;
+  transform: scale(0.9);
+  transition: all ease 0.2;
+}
+
+li img:hover {
+  transform: scale(1);
+}
+
+@media (min-width: 900px) {
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    background-color: #202024;
+  }
+  .avatar {
+    margin: 4.7rem auto 0;
+    margin-top: 14.6875rem;
+  }
+  ul {
+    margin: 1.5rem auto 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    background: url(images/background.svg) no-repeat center/cover;
+    background-color: #202024;
+  }
+  .avatar {
+    margin: 4.7rem auto 0;
+    margin-top: 14.75rem;
+  }
+  ul {
+    margin: 1.5rem auto 0;
+  }
 }
