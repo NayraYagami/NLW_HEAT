@@ -1,5 +1,5 @@
 const LinksSocialMedia = {
-  github: '00estella00',
+  github: 'NayraYagami',
   linkedin: 'in/nayra-silva-549686202',
   facebook: '100019561932349',
   instagram: 'nayrayagami',
